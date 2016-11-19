@@ -45,7 +45,8 @@
             messages.append(
               $("<li>").append(
                 $("<strong>").text(msg.Name + ": " ),
-                $("<span>").text(msg.Message)
+                $("<span>").text(msg.Message),
+                $("<strong>").text(" (" + msg.When + ")")
               )
             );
           }
